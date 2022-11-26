@@ -407,7 +407,7 @@
   (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
   :config
   (lsp-enable-which-key-integration t)
-  (add-to-list 'exec-path "~/dev/elixir-ls-1.13-25.0"))
+  (add-to-list 'exec-path "~/dev/elixir-ls-1.14-25.1"))
 
 (use-package lsp-ui
   :hook (lsp-mode . lsp-ui-mode)
