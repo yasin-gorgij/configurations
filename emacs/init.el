@@ -498,7 +498,7 @@
               (push '("=~" . ?\u2245) prettify-symbols-alist)
               (push '("<-" . ?\u2190) prettify-symbols-alist)
               (push '("->" . ?\u2192) prettify-symbols-alist)
-              (push '("<-" . ?\u2190) prettify-symbols-alist)
+              (push '("=>" . ?\u21D2) prettify-symbols-alist)
               (push '("|>" . ?\u25B7) prettify-symbols-alist))))
   :bind (:map elixir-mode-map
 	      ("C-c C-f" . elixir-format)
@@ -681,3 +681,7 @@
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-mode)
 
+
+;; Install restclient
+(use-package restclient)
+(require 'restclient)
