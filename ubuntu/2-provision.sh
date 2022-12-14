@@ -24,8 +24,8 @@ asdf global elixir 1.14.2
 
 # Download Elixir LS for GNU Emacs #
 cd ~/dev
-wget -c https://github.com/elixir-lsp/elixir-ls/releases/download/v0.11.0/elixir-ls-1.13-25.0.zip
-unzip -d elixir-ls-1.13-25.0 elixir-ls-1.13-25.0.zip
+wget -c https://github.com/elixir-lsp/elixir-ls/releases/download/v0.12.0/elixir-ls-1.14-25.1.zip
+unzip -d elixir-ls-1.14-25.1 elixir-ls-1.14-25.1.zip
 
 # Install Sublime Text #
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
