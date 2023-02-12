@@ -58,3 +58,6 @@ sudo exportfs -arf
 # Install picocom #
 sudo apt-get install -y picocom
 
+# Install git-sim
+# https://initialcommit.com/tools/git-sim
+pip3 install git-sim
