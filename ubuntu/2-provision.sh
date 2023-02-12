@@ -4,7 +4,7 @@ set -ex
 sudo apt-get update
 sudo apt-get upgrade -y
 
-sudo apt-get install -y ca-certificates curl emacs fonts-cantarell fonts-firacode gnupg imagemagick libpng-dev libpoppler-glib-dev lsb-release vim vlc zlib1g-dev 
+sudo apt-get install -y ca-certificates curl emacs ffmpeg fonts-cantarell fonts-firacode gnupg imagemagick libpng-dev libpoppler-glib-dev lsb-release vim vlc zlib1g-dev 
 
 # Install ASDF #
 git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.10.0
