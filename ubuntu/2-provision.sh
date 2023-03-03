@@ -7,7 +7,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y ca-certificates curl emacs ffmpeg fonts-cantarell fonts-firacode gnupg imagemagick libpng-dev libpoppler-glib-dev lsb-release vim vlc zlib1g-dev 
 
 # Install ASDF #
-git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.10.0
+git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.11.2
 echo '' >> $HOME/.zshrc
 echo '# ASDF #' >> $HOME/.zshrc
 echo '. $HOME/.asdf/asdf.sh' >> $HOME/.zshrc
