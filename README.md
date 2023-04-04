@@ -2,7 +2,7 @@
 
 In this repository I keep track of configurations of:
 
-  * GNU Emacs
+  * GNU Emacs (Personal directory of [Prelude](https://prelude.emacsredux.com/en/latest/))
   * Ubuntu
 
 # License
