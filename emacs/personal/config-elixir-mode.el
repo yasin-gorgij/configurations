@@ -1,5 +1,5 @@
 (add-hook 'elixir-mode-hook 'lsp-deferred)
-(add-to-list 'exec-path "/home/yasin/apps/elixir-ls-1.14-25.1")
+(add-to-list 'exec-path "~/apps/language-servers/elixir-ls-1.14-25.1")
 
 (add-hook 'elixir-mode-hook
   (lambda ()
