@@ -1,26 +1,18 @@
-(unless (package-installed-p 'doom-themes)
-  (package-install 'doom-themes))
-(setq doom-theme 'doom-palenight)
-(load-theme 'doom-palenight t)
-
 (setq inhibit-startup-screen t)
 (scroll-bar-mode -1)
 
 (unless (package-installed-p 'vterm)
   (package-install 'vterm))
 
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("f74e8d46790f3e07fbb4a2c5dafe2ade0d8f5abc9c203cd1c29c7d5110a85230" default))
  '(package-selected-packages
-   '(treemacs all-the-icons-dired all-the-icons zop-to-char zenburn-theme yasnippet yaml-mode which-key web-mode vterm volatile-highlights vertico use-package undo-tree tree-sitter-langs super-save smartrep smartparens slime rust-mode ron-mode restclient rainbow-mode rainbow-delimiters racket-mode projectile pdf-view-restore orderless operate-on-number nlinum move-text magit lsp-ui json-mode js2-mode imenu-anywhere hl-todo haskell-mode guru-mode git-timemachine git-modes gist geiser flycheck-rust expand-region exec-path-from-shell erlang elisp-slime-nav editorconfig easy-kill doom-themes doom-modeline discover-my-major diminish diff-hl crux consult cider cargo browse-kill-ring auto-package-update anzu alchemist ag ace-window)))
-
-(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
-
+   '(eat ace-window ag alchemist all-the-icons all-the-icons-dired all-the-icons-nerd-fonts anzu auto-package-update browse-kill-ring cargo cider company consult crux diff-hl diminish discover-my-major dockerfile-mode easy-kill editorconfig elisp-slime-nav elixir-mode epl erlang exec-path-from-shell expand-region fira-code-mode flycheck flycheck-rust geiser gist git-modes git-timemachine guru-mode haskell-mode hl-todo imenu-anywhere inf-clojure js2-mode json-mode lsp-mode lsp-ui magit move-text nlinum operate-on-number orderless pdf-tools pdf-view-restore projectile racket-mode rainbow-delimiters rainbow-mode restclient ron-mode rust-mode slime smartparens smartrep super-save tree-sitter-langs treemacs undo-tree use-package vertico volatile-highlights vterm web-mode which-key yaml-mode yasnippet zenburn-theme zop-to-char ace-window ag anzu browse-kill-ring consult crux diff-hl diminish discover-my-major easy-kill editorconfig elisp-slime-nav exec-path-from-shell expand-region gist git-modes git-timemachine guru-mode hl-todo imenu-anywhere js2-mode json-mode lsp-ui magit move-text nlinum operate-on-number orderless projectile rainbow-delimiters rainbow-mode smartparens smartrep super-save undo-tree vertico volatile-highlights web-mode which-key yaml-mode zenburn-theme zop-to-char)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -29,7 +21,7 @@
  )
 
 ;; Make frame transparency overridable
-(defvar efs/frame-transparency '(90 . 90))
+(defvar efs/frame-transparency '(100 . 100))
 
 ;; Set frame transparency
 (set-frame-parameter (selected-frame) 'alpha efs/frame-transparency)
@@ -38,16 +30,16 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; You will most likely need to adjust this font size for your system!
-(defvar efs/default-font-size 110)
-(defvar efs/default-variable-font-size 110)
+(defvar efs/default-font-size 100)
+(defvar efs/default-variable-font-size 100)
 
 ;; The default is 800 kilobytes.  Measured in bytes.
 (setq gc-cons-threshold (* 50 1000 1000))
 
-(set-face-attribute 'default nil :font "Fira Code Retina" :height efs/default-font-size)
+(set-face-attribute 'default nil :font "Fira Code Light" :height efs/default-font-size)
 
 ;; Set the fixed pitch face
-(set-face-attribute 'fixed-pitch nil :font "Fira Code Retina" :height efs/default-font-size)
+(set-face-attribute 'fixed-pitch nil :font "Fira Code Light" :height efs/default-font-size)
 
 ;; Set the variable pitch face
 (set-face-attribute 'variable-pitch nil :font "Cantarell" :height efs/default-variable-font-size :weight 'regular)
@@ -65,12 +57,6 @@
 
 (set-fringe-mode 10)
 (set-face-attribute 'fringe nil :background nil)
-
-(unless (package-installed-p 'doom-modeline)
- (package-install 'doom-modeline))
-(require 'doom-modeline)
-(doom-modeline-mode 1)
-(setq doom-modeline-height 25)
 
 (unless (package-installed-p 'auto-package-update)
   (package-install 'auto-package-update))
