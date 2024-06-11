@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     arangodb
-    dbeaver
+    dbeaver-bin
     minio
     mysql80
     postgresql_16

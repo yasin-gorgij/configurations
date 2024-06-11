@@ -3,8 +3,8 @@
 {
   environment.systemPackages = with pkgs; [
     # BEAM Languages
-    elixir_1_16
-    erlang_26
+    elixir
+    erlang_27
     inotify-tools
 
     # Clojure
@@ -30,6 +30,7 @@
     temurin-bin-21
 
     # Fun Languages #
+    go
     lua
     racket
     rustup

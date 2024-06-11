@@ -8,8 +8,6 @@
   environment.systemPackages = with pkgs; [
     emacs29
     jetbrains-toolbox
-    vim
-    vscode
   ];
 
 }
