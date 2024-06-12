@@ -88,7 +88,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # Fonts
-  fonts.packages = with pkgs; [ fira-code fira-code-symbols cantarell-fonts ];
+  fonts.packages = with pkgs; [ fira-code fira-code-symbols cantarell-fonts cascadia-code ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
