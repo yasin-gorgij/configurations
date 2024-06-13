@@ -30,16 +30,16 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; You will most likely need to adjust this font size for your system!
-(defvar efs/default-font-size 100)
-(defvar efs/default-variable-font-size 100)
+(defvar efs/default-font-size 110)
+(defvar efs/default-variable-font-size 110)
 
 ;; The default is 800 kilobytes.  Measured in bytes.
 (setq gc-cons-threshold (* 50 1000 1000))
 
-(set-face-attribute 'default nil :font "Fira Code Light" :height efs/default-font-size)
+(set-face-attribute 'default nil :font "Cascadia Code Light" :height efs/default-font-size)
 
 ;; Set the fixed pitch face
-(set-face-attribute 'fixed-pitch nil :font "Fira Code Light" :height efs/default-font-size)
+(set-face-attribute 'fixed-pitch nil :font "Cascadia Code Light" :height efs/default-font-size)
 
 ;; Set the variable pitch face
 (set-face-attribute 'variable-pitch nil :font "Cantarell" :height efs/default-variable-font-size :weight 'regular)
