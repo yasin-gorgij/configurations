@@ -114,7 +114,6 @@
     unrar
     unzip
     wget
-    xarchiver
 
     # Download Manager
     uget
