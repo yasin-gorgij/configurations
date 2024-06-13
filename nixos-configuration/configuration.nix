@@ -111,6 +111,7 @@
     sshpass
     sshuttle
     steam-run
+    unrar
     unzip
     wget
     xarchiver
