@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./databases-configuration.nix
       ./development-tools-configuration.nix
+      ./docker-configuration.nix
       ./editors-configuration.nix
       ./hardware-configuration.nix
       ./programming-languages-configuration.nix
