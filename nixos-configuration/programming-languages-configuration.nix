@@ -25,6 +25,8 @@
     python311Packages.pip
 
     # Java
+    gradle
+    maven
     temurin-bin-21
 
     # Fun Languages #
