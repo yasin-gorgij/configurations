@@ -6,6 +6,7 @@
     elixir_1_17
     erlang_27
     inotify-tools
+    livebook
 
     # Clojure
     clj-kondo
