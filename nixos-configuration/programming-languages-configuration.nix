@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     # BEAM Languages
-    elixir_1_17
+    elixir
     erlang_27
     inotify-tools
     livebook
