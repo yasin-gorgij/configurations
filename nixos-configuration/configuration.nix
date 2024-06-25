@@ -99,8 +99,6 @@
 
     # Browsers
     chromium
-    opera
-    tor-browser
 
     # Social Media
     skypeforlinux
