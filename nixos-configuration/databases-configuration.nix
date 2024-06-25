@@ -5,7 +5,6 @@
     arangodb
     dbeaver-bin
     minio
-    mysql80
     postgresql_16
     duckdb
     rethinkdb
