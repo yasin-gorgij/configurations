@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     # BEAM Languages
-    elixir
+    asdf-vm
     erlang_27
     inotify-tools
 
