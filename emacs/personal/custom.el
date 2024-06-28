@@ -4,6 +4,18 @@
 (unless (package-installed-p 'vterm)
   (package-install 'vterm))
 
+(unless (package-installed-p 'all-the-icons)
+  (package-install 'all-the-icons))
+
+(unless (package-installed-p 'all-the-icons-dired)
+  (package-install 'all-the-icons-dired))
+
+(unless (package-installed-p 'all-the-icons-nerd-fonts)
+  (package-install 'all-the-icons-nerd-fonts))
+
+(use-package all-the-icons
+  :if (display-graphic-p))
+
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
 (custom-set-variables
@@ -30,16 +42,16 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; You will most likely need to adjust this font size for your system!
-(defvar efs/default-font-size 110)
-(defvar efs/default-variable-font-size 110)
+(defvar efs/default-font-size 120)
+(defvar efs/default-variable-font-size 120)
 
 ;; The default is 800 kilobytes.  Measured in bytes.
 (setq gc-cons-threshold (* 50 1000 1000))
 
-(set-face-attribute 'default nil :font "Cascadia Code Light" :height efs/default-font-size)
+(set-face-attribute 'default nil :font "Fira Code Medium" :height efs/default-font-size)
 
 ;; Set the fixed pitch face
-(set-face-attribute 'fixed-pitch nil :font "Cascadia Code Light" :height efs/default-font-size)
+(set-face-attribute 'fixed-pitch nil :font "Fira Code Retina" :height efs/default-font-size)
 
 ;; Set the variable pitch face
 (set-face-attribute 'variable-pitch nil :font "Cantarell" :height efs/default-variable-font-size :weight 'regular)
