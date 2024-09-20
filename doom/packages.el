@@ -48,3 +48,13 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+
+(package! vterm)
+(package! treemacs)
+(package! treemacs-evil)
+(package! treemacs-magit)
+(package! project-treemacs)
+(package! treemacs-nerd-icons)
+(package! treemacs-projectile)
+(package! treemacs-icons-dired)
+(package! treemacs-all-the-icons)
