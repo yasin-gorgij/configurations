@@ -59,6 +59,3 @@
 (package! treemacs-icons-dired)
 (package! treemacs-all-the-icons)
 (package! flycheck-golangci-lint)
-(package! go-eldoc)
-(package! go-gen-test)
-(package! go-tag)
