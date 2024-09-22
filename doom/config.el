@@ -75,4 +75,16 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(setq doom-font (font-spec :size 20 :slant 'normal :weight 'normal))
+
+(add-hook! 'go-mode-hook
+  (add-hook 'before-save-hook #'lsp-format-buffer nil 'local)
+  (add-hook 'before-save-hook #'lsp-organize-imports nil 'local))
+(add-hook! 'elixir-mode-hook
+  (add-hook 'before-save-hook #'lsp-format-buffer nil 'local)
+  (add-hook 'before-save-hook #'lsp-organize-imports nil 'local))
+
+;; https://github.com/emacs-lsp/lsp-mode/issues/3577
+;; (after! lsp-mode
+  ;; https://github.com/emacs-lsp/lsp-mode/issues/3577#issuecomment-1709232622
+  ;; (delete 'lsp-terraform lsp-client-packages))

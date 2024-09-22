@@ -58,4 +58,4 @@
 (package! treemacs-projectile)
 (package! treemacs-icons-dired)
 (package! treemacs-all-the-icons)
-(package! flycheck-golangci-lint)
+(package! pdf-tools)
